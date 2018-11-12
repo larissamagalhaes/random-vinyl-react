@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import vinyl from './vinyl.svg';
 import './App.css';
+import './index.css';
+import Table from './Table';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="ContainerColumn">
+       <div className="ContainerRow">
+          <img src={vinyl} className="App-logo" alt="vinyl" />
+          <div className="ContainerColumn">
+            <text className="TitleText"> Friday The 13th Part II</text>
+            <text className="SubtitleText"> Harry Manfredini</text>
+            <text className="SubtitleText"> 2015</text>
+            <text className="SubtitleText">Waxwork Records</text>
+        </div>
+      </div>
+      <div className="Separator"></div>
+        <Table/>
       </div>
     );
   }
