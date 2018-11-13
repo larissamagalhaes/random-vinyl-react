@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
 import './Table.css';
 import './index.css';
+import { List, Avatar } from 'antd';
+
+
 
 class Table extends Component {
     render() {
+        const tracklist = this.props.tracklist
+        console.log(tracklist);
         return (
-            <div className="Table">
-
-                <tbody className="SubtitleText">Flashback</tbody>
-                <tbody className="SubtitleText">Alice Hangs Up</tbody>
-                <tbody className="SubtitleText">Prowler</tbody>
-                <tbody className="SubtitleText">Prowler</tbody>
-            </div>
+            <List
+                itemLayout="horizontal"
+                size="large"
+                header={<h3>Songs</h3>}
+                dataSource={tracklist}
+                renderItem={item => (
+                    <List.Item>
+                        <List.Item.Meta
+                            title={item.title} />
+                    </List.Item>
+                )}
+            />
         );
     }
 }
 
 export default Table;
+

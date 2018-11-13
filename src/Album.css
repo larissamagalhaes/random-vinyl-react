@@ -1,0 +1,26 @@
+.ContainerRow {
+    flex-direction: row;
+    display: flex;  
+    align-items: left;
+  }
+
+  .App-logo {
+    align-self: top;
+    height: 20vmin;
+    margin: 16px;
+  }
+  
+  .TitleText {
+    font-size: calc(8px + 2vmin);
+    color: #312922;
+  }
+  
+  .SubtitleText {
+    font-size: calc(8px + 1vmin);
+    color: #4a3d33;
+  }
+  
+  .DetailsText {
+    color: #7c6656
+  }
+  
