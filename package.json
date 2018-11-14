@@ -7,6 +7,7 @@
     "axios": "^0.18.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-loading": "^2.0.3",
     "react-scripts": "2.1.1",
     "react-table": "^6.8.6",
     "react-toolbox": "^2.0.0-beta.13",

@@ -3,6 +3,7 @@ import './App.css';
 import './index.css';
 import Table from './Table';
 import Album from './Album';
+import ReactLoading from 'react-loading';
 
 class App extends react.Component {
   constructor(propos) {
@@ -51,13 +52,12 @@ class App extends react.Component {
   render() {
     var { isLoaded, item, tracklist } = this.state;
     if (!isLoaded) {
-      return <div>Loading...</div>
+      return <ReactLoading className="Spin" type={"spin"} color={"#F07A87"} height={100} width={100} />
     } else {
       console.log(tracklist);
       return (
         <div className="ContainerColumn">
           <Album basic_information={item.basic_information} />
-          <div className="Separator"></div>
           <Table tracklist={tracklist} />
         </div>
       );

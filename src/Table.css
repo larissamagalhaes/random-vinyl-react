@@ -1,5 +1,6 @@
 @import '~antd/dist/antd.css';
 
-.Table {
-    margin: 16px
-}
+.HeaderText {
+    font-size: 20px;
+    color: #312922;
+  }

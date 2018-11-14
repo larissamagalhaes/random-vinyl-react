@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Table.css';
 import './index.css';
+import './Album.css';
 import { List, Avatar } from 'antd';
 
 
@@ -11,9 +12,10 @@ class Table extends Component {
         console.log(tracklist);
         return (
             <List
+                bordered="true"
                 itemLayout="horizontal"
-                size="large"
-                header={<h3>Songs</h3>}
+                size="middle"
+                header={<text className="HeaderText">Songs</text>}
                 dataSource={tracklist}
                 renderItem={item => (
                     <List.Item>
